@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTTP(s)</title>
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  <!-- FontAwesome Link -->
+  <script src="https://kit.fontawesome.com/0f71cd6149.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Grid box defines a grid that consists of a header, sidebar, content section and a footer -->
+  <div class="grid-box">
+
+    <!-- Header Section: Title and Short Description -->
+    <div class="box header">
+      <h1>What is a Request?</h1>
+      <p>A request needs to be sent from our computer to the web server to retrieve all the resources required to access/view/modify a web page.</p>
+    </div>
+
+    <!-- Sidebar Section: for navigation of all pages in chronological order.-->
+    <div class="box sidebar">
+      <h1>Navigate This Website</h1>
+      <ul>
+        <li><a href="index.html">What is HTTP(s)?</a></li>
+        <li><a href="process.html">How is a website downloaded?</a></li>
+        <li><a href="requests.html">What is a Request?</a></li>
+        <li><a href="httpMethods.html">HTTP's main methods: GET and POST</a></li>
+      </ul>
+    </div>
+
+    <!-- Content Section: consists of all the main context of the article. -->
+    <div class="box content">
+      <!-- Request: describes what a request is and breaks it down into simple parts-->
+      <h2>Requests</h2>
+      <p>The modern day request looks like this:</p>
+
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/requestHeader-small.png">
+        <source media="(max-width: 1000px)" srcset="images/requestHeader-medium.png">
+        <source media="(max-width: 1200px)" srcset="images/requestHeader-large.png">
+        <img class="website-example-large centred-image" src="images/requestHeader-large.png" alt="">
+      </picture>
+
+      <p><em>This is a request to get an html file from the example website we've been using so far.</em></p>
+      <p>Looks complicated; but it can be broken down into simple parts.</p>
+
+
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/simpleRequest-small.png">
+        <source media="(max-width: 1000px)" srcset="images/simpleRequest-medium.png">
+        <source media="(max-width: 1200px)" srcset="images/simpleRequest-large.png">
+        <img class="website-example-large centred-image" src="images/simpleRequest-large.png" alt="">
+      </picture>
+
+      <p><strong>Header:</strong> this consists of logistical information such as the URL to retrieve the information from, the request command GET, and other information such as where to send the response back to.
+        <br><strong>Intentional Blank Line:</strong> This is used to separate the header from the body.
+        <br><strong>Body:</strong> can include additional information. Nothing special is used to simply view a website, but if we were to make a comment on a YouTube video, it would have that information.
+      </p>
+
+      <!-- Response: describes what a response looks like and breaks it down into simple parts. -->
+      <h2>Responses</h2>
+      <p>
+        Naturally if we make a request, we will get back a response. As per tradition, this is what a modern day response looks like:
+      </p>
+
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/responseHeader-small.png">
+        <source media="(max-width: 1000px)" srcset="images/responseHeader-medium.png">
+        <source media="(max-width: 1200px)" srcset="images/responseHeader-large.png">
+        <img class="website-example-large centred-image" src="images/responseHeader-large.png" alt="">
+      </picture>
+
+      <p>This looks even more intimidating than before. It can get even longer,
+        but for the scope of this information page, we want to understand the basics:</p>
+
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/simpleResponse-small.png">
+          <source media="(max-width: 1000px)" srcset="images/simpleResponse-medium.png">
+          <source media="(max-width: 1200px)" srcset="images/simpleResponse-large.png">
+          <img class="website-example-large centred-image" src="images/simpleResponse-large.png" alt="">
+        </picture>
+
+      <p><strong>Header:</strong> logistical information varying from a status line, the type/length/age of data being sent back, all the way to where this data is being stored. Amongst other logistical things.
+        <br><strong>Intentional Blank Line:</strong> used to separate the header from the body.
+        <br><strong>Body:</strong> contains content of the requested item. For an HTML file this is the HTML code. Similar for CSS and JavaScript files. For images this might just consist of random bytes – sequences of 1’s and 0’s that our browser
+        understands so we don’t
+        have to.
+      </p>
+
+      <h2>Common Error Codes</h2>
+
+      <p><em>Now that we know what requests are, we should know some of the most common errors that come with making a request. This knowledge can help us troubleshoot later.</em></p>
+      <!-- Table: shows all common error codes, spaced out nicely without borders. -->
+      <table>
+        <tr>
+          <th>Error Code</th>
+          <th>Meaning</th>
+        </tr>
+        <tr>
+          <td>400</td>
+          <td>Bad request. A request not written correctly.</td>
+        </tr>
+        <tr>
+          <td>401</td>
+          <td>Unauthorised. The user trying to access the resource has not been authenticated/not authenticated correctly. Credentials required.</td>
+        </tr>
+        <tr>
+          <td>403</td>
+          <td>Forbidden. The request is valid, but the server is rejecting the request due to lack of access permissions.</td>
+        </tr>
+        <tr>
+          <td>404</td>
+          <td>The infamous NOT FOUND error. The user was able to communicate with the server, but the resource was not found.</td>
+        </tr>
+        <tr>
+          <td>500</td>
+          <td>Internal server error. Server cannot process the request due to unknown reasons. The most common being server misconfiguration or missing packages.</td>
+        </tr>
+        <tr>
+          <td>502</td>
+          <td>Bad gateway. The server is a gateway/proxy server and is not receiving a valid response from its backend servers that should fulfill the request.</td>
+        </tr>
+        <tr>
+          <td>504</td>
+          <td>Gateway timeout. The server is a server/proxy server and it’s unable to retrieve a response from the backend servers within an allowed time period. </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Footer Section: nagivation links to previous and subsequent pages in chronological order. -->
+    <div class="box footer">
+      <span class="leftLink"><a href="process.html"><i class="fa-solid fa-arrow-left"></i>How is a Website Downloaded?</a></span>
+      <span class="rightLink"><a href="httpMethods.html">GET and POST Methods<i class="fa-solid fa-arrow-right"></i></a></span>
+      <br>
+      <br>
+      <p class="credits"><i class="fa-solid fa-copyright"></i> Hannah Carino</p>
+    </div>
+  </div>
+</body>
+
+</html>

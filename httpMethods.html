@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTTP(s)</title>
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  <!-- FontAwesome Link -->
+  <script src="https://kit.fontawesome.com/0f71cd6149.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Grid box defines a grid that consists of a header, sidebar, content section and a footer -->
+  <div class="grid-box">
+
+    <!-- Header Section: Title and Short Description -->
+    <div class="box header">
+      <h1>HTTP(s) Methods: GET and POST</h1>
+      <p>When making a request to a server, we send a GET command. When posting information to a server, we send a POST command.</p>
+    </div>
+
+    <!-- Sidebar Section: for navigation of all pages in chronological order.-->
+    <div class="box sidebar">
+      <h1>Navigate This Website</h1>
+      <ul>
+        <li><a href="index.html">What is HTTP(s)?</a></li>
+        <li><a href="process.html">How is a website downloaded?</a></li>
+        <li><a href="requests.html">What is a Request?</a></li>
+        <li><a href="httpMethods.html">HTTP's main methods: GET and POST</a></li>
+      </ul>
+    </div>
+
+    <!-- Content Section: consists of all the main context of the article. -->
+    <div class="box content">
+      <h2>The GET Method</h2>
+      <ul>
+        <li>Used to request data from a specified source</li>
+        <li>A successful GET request returns a response containing the resources requested. Resource meaning website, file, or whatever else you can GET on the internet.</li>
+        <li>Belongs at the top of an HTTPs request along with host URL and an endpoint path.</li>
+        <li>A successful post would receive a <strong>status response</strong> of 200.</li>
+        <li><strong>Safe method:</strong> for information retrieval. Does not make modifications on the website.</li>
+      </ul>
+
+      <h2>The POST Method</h2>
+      <ul>
+        <li>Creates a new resource on a website/web-server</li>
+        <li>Requires a body (that we mentioned in the previous page) which defines the resource to be posted.</li>
+        <li>A successful post would receive a <strong>status response</strong> of 200.</li>
+        <li><strong>Unsafe method:</strong> makes modifications/can have side-effects on a server. <em>Other unsafe methods include PUT, PATCH and DELETE.</em></li>
+      </ul>
+
+      <hr>
+      <h2>Summary</h2>
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/httpSummary-small.png">
+        <source media="(max-width: 1000px)" srcset="images/httpSummary-medium.png">
+        <source media="(max-width: 1200px)" srcset="images/httpSummary-large.png">
+        <img class="website-example-large centred-image" src="images/httpSummary-large.png" alt="">
+      </picture>
+
+      <p>To summarise, HTTP is a transport protocol. It can transfer files, images, text, and applications. It is what
+      allows us to view/interact with things on the internet. Most websites consist of HTML, CSS and JavaScript to control
+      the user interface (what we see). It works in a client-server style relationship where a client
+      makes a <strong>request</strong> and receives a <strong>response</strong> from the server. Any computer can act as a client or a server,
+      or both. The most common methods are GET for information retrieval and POST for information sending.</p>
+    </div>
+
+    <!-- Footer Section: nagivation links to previous and subsequent pages in chronological order. -->
+    <div class="box footer">
+      <span class="leftLink"><a href="requests.html"><i class="fa-solid fa-arrow-left"></i>What is a request?</a></span>
+      <span class="rightLink"><a href="httpMethods.html">No pages after this<i class="fa-solid fa-arrow-right"></i></a></span>
+      <br>
+      <br>
+      <p class="credits"><i class="fa-solid fa-copyright"></i> Hannah Carino</p>
+    </div>
+  </div>
+</body>
+
+</html>

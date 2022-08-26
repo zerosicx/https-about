@@ -1,0 +1,172 @@
+/* Colours to remember:
+Light: #e8e8e8
+Green for Headers: #4CB8A3
+Dark Green: #25544c
+Blue for links: #4974BB
+Dark Blue: #2d4b7a
+Dark color: #252525
+ */
+
+
+/* General Styles */
+
+body {
+  font-family: "Helvetica";
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: #252525;
+}
+
+ol {
+  text-align: left;
+  list-style-position: inside;
+  line-height: 2;
+}
+
+hr {
+  border: 0;
+  border-top: 6px solid #25544c;
+  width: 5%;
+  margin: 5% auto;
+}
+
+/* Header Section */
+
+.header {
+  grid-area: header;
+  color: #e8e8e8;
+}
+
+.header > h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.header > p {
+  line-height: 1.5;
+}
+
+/* Side bar */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #4974BB;
+}
+
+.sidebar > h1{
+  color: #252525;
+  font-size: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 5%;
+}
+
+.sidebar ul a{
+  color: #2d4b7a;
+}
+
+/* Content Section */
+
+.content {
+  color: #25544c;
+  background-color: #4CB8A3;
+  grid-area: content;
+  position: relative;
+  text-align: left;
+}
+
+.content p{
+  line-height: 1.75;
+}
+
+.centred-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.webfile-image {
+  width: 50%;
+}
+
+.website-example {
+  width: 50%;
+}
+
+.website-example-large {
+  width: 80%;
+}
+
+table th {
+  padding: 3% 0;
+}
+
+table td {
+  padding: 2%;
+}
+
+/* Footer Section */
+.footer {
+  grid-area: footer;
+  padding: 3%;
+  color: #e8e8e8;
+}
+
+.footer a {
+  color: #e8e8e8;
+}
+
+.leftLink {
+  float: left;
+}
+
+.rightLink {
+  float: right;
+}
+
+/* Grid logistics */
+
+
+.grid-box {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 300px auto auto auto;
+    grid-template-areas:
+    "header  header  header header"
+    "sidebar content content content"
+    "footer  footer  footer footer";
+    background-color: #000;
+    color: #e8e8e8;
+  }
+
+
+.box {
+  padding: 4% 15%;
+}
+
+.header,
+.footer {
+  background-color: #252525;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+  .grid-box {
+    grid-template-areas:
+    "header  header  header header"
+    "content content content content"
+    "footer  footer  footer footer";
+    }
+}

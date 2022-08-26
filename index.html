@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTTP(s)</title>
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  <!-- FontAwesome Link -->
+  <script src="https://kit.fontawesome.com/0f71cd6149.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Grid box defines a grid that consists of a header, sidebar, content section and a footer -->
+  <div class="grid-box">
+
+    <!-- Header Section: title and short description -->
+    <div class="box header">
+      <h1>HTTP(s)</h1>
+      <em>Hyper Text Transfer Protocol</em>
+      <p> HTTP is a transfer protocol – set of rules for a procedure – concerned
+        with the transportation of a web page across the internet. Web pages are
+        files themselves and are contained in HTML documents for content, CSS for styling,
+        and JavaScript documents for functionality.
+      </p>
+    </div>
+
+    <!-- Sidebar Section: for navigation of all pages in chronological order.-->
+    <div class="box sidebar">
+      <h1>Navigate This Website</h1>
+      <ul>
+        <li><a href="index.html">What is HTTP(s)?</a></li>
+        <li><a href="process.html">How is a website downloaded?</a></li>
+        <li><a href="requests.html">What is a Request?</a></li>
+        <li><a href="httpMethods.html">HTTP's main methods: GET and POST</a></li>
+      </ul>
+    </div>
+
+    <!-- Content Section: consists of all the main context of the article. -->
+    <div class="box content">
+      <p><em>To properly understand HTTP(s), we need to get acquainted with some terms first.
+          <br>I'm also going to use a small website I created to demonstrate all the examples here.</em></p>
+      <br>
+      <h2>HTML: Hyper Text Markup Language</h2>
+      <p>HTML Documents consist of bodies of <strong>text, images, videos, gifs,
+          and other forms of media.</strong>
+        When it was first created however, HTML only consisted of text. So, we’ve come a long way from 1993. Similarly, the first HTTP prototype
+        released was in 1991! Currently we’re on HTML 5.
+      </p>
+
+      <hr>
+      <h2>Protocol</h2>
+      <p> A communication mechanism used to retrieve the resource.
+        You could think of it as a <em>methodology</em> or a <em>way of doing
+          something.</em> In this case, it is the way of transferring website
+        building-blocks comprised of documents.</p>
+
+      <hr>
+      <h2>URL (Uniform Resource Locator)</h2>
+      <p>a URL is what we commonly know as the website name or domain. It’s been
+        greatly simplified for everyday use, but we can break it down to
+        understand how we see websites today. For example:</p>
+
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/websiteAnnotation-small.png">
+        <source media="(max-width: 1000px)" srcset="images/websiteAnnotation-medium.png">
+        <source media="(max-width: 1200px)" srcset="images/websiteAnnotation-large.png">
+        <img class="website-example-large centred-image" src="images/websiteAnnotation-large.png" alt="">
+      </picture>
+
+      <ol>
+        <li><strong>HTTPS:</strong>the protocol for retrieving the website</li>
+        <li><strong>The website domain:</strong> the name of the domain such as kmart.co.nz and github.io</li>
+        <li><strong>Port:</strong> right after the domain name, a hidden protocol is there but does not need to be explicitly stated.</li>
+        <li><strong>File path:</strong> the path in the file system of a webserver that leads to the file</li>
+        <li><strong>File name</strong></li>
+      </ol>
+
+      <p> You may have noticed the protocol here is HTTPs rather than the standard
+        HTTP. The “s” in HTTPs simply means <em><strong>secure. </strong></em>The whole of the internet has
+        recently moved to this protocol.
+      </p>
+
+      <p>Secure <i class="fa-solid fa-lock"></i> means all our website traffic is encrypted. This makes it harder
+        to track our data and identify us, and our location on the internet.
+        For this reason, always make sure you’re on an HTTPs-employing website,
+        or your data might just get compromised.</p>
+
+      <p>One way we know is by seeing this little lock <i class="fa-solid fa-lock"></i> image on our search bars.</p>
+
+      <hr>
+      <h2>Summary</h2>
+      <p>Thus, HTTP is the method of communication between client (us) and server
+        (website owner). We can technically be both the client and server as well,
+        depending on if we decide to build our own website and put it on the
+        network.</p>
+    </div>
+
+    <!-- Footer Section: nagivation links to previous and subsequent pages in chronological order. -->
+    <div class="box footer">
+      <span class="leftLink"><a href="#"><i class="fa-solid fa-arrow-left"></i>No pages before this</a></span>
+      <span class="rightLink"><a href="process.html">How is a Website Downloaded?<i class="fa-solid fa-arrow-right"></i></a></span>
+      <br>
+      <br>
+      <p class="credits"><i class="fa-solid fa-copyright"></i> Hannah Carino</p>
+    </div>
+  </div>
+</body>
+
+</html>
